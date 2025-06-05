@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-
-
 public class JHJ : MonoBehaviour
 {
     string name = "정호진";
@@ -40,10 +38,3 @@ public class JHJ : MonoBehaviour
 
     }
 }
-/*    public void Introduction(string _name, int _age)
-    {
-        Debug.Log("저의 이름은 " + _name + " 입니다.");
-        Debug.Log($"저의 나이는 {_age}살 입니다.");
-    }
-}
-*/
