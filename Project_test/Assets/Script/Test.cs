@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class JHJ : MonoBehaviour
 {
-    string name = "정호진";
+    string name2 = "정호진";
     int age = 25;
     float height = 169.4f;
     int weight = 51;
@@ -29,7 +29,7 @@ public class JHJ : MonoBehaviour
 
     public void Introduction()
     {
-        Debug.Log($"제 이름은 {name}이고, 나이는 {age}살 입니다.\n 키는 {height}cm이고, 몸무게는 {weight}kg입니다. mbti는 {mbti}입니다.\n");
+        Debug.Log($"제 이름은 {name2}이고, 나이는 {age}살 입니다.\n 키는 {height}cm이고, 몸무게는 {weight}kg입니다. mbti는 {mbti}입니다.\n");
         if (male)
         {
             Debug.Log("성별은 남성입니다.");
