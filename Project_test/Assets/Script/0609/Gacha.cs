@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.TextCore.Text;
 
 public class Archive : MonoBehaviour
 {
-    
+    public TextMeshProUGUI Txt_diamond;
+
     int count = 0;
     int diamond = 24000;
 
@@ -56,6 +58,8 @@ public class Archive : MonoBehaviour
         {
             diamond += 12000;
             Debug.Log($"청휘석 12000개가 충전되었습니다.");
+
+            RefreshUI();
         }
 
     // Update is called once per frame
@@ -94,6 +98,7 @@ public class Archive : MonoBehaviour
             }
 
             diamond -= 1200;
+            RefreshUI();
         }
         else
         {
@@ -101,13 +106,14 @@ public class Archive : MonoBehaviour
         }
     }
 
-/*
 
-    void OnClickBlackcow()
+
+
+
+    void RefreshUI()
     {
         Txt_diamond.text = $"{diamond}";
     }
 
-    */
 }
 
